@@ -7,7 +7,7 @@ sources:
       (carmen_sightings_20220629061307.xlsx). Each table corresponds to one
       Interpol agency region. Column names differ per region (local language/dialect).
     database: cascade_debt
-    schema: public_raw
+    schema: raw
     loader: seed
 
     tables:
