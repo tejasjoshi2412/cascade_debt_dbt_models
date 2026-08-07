@@ -11,23 +11,19 @@ sources:
     loader: seed
 
     tables:
-      - name: AFRICA
+      - name: africa
         description: Field reports from the Africa regional agency. Standard column naming.
-      - name: AMERICA
+      - name: america
         description: Field reports from the America regional agency. Standard column naming.
-      - name: ASIA
+      - name: asia
         description: Field reports from the Asia regional agency. Column names in Chinese.
-      - name: ATLANTIC
+      - name: atlantic
         description: Field reports from the Atlantic regional agency. Standard column naming.
-      - name: AUSTRALIA
+      - name: australia
         description: Field reports from the Australia regional agency. Australian English dialect.
-      - name: EUROPE
+      - name: europe
         description: Field reports from the Europe regional agency. Column names in French.
-      - name: INDIAN
+      - name: indian
         description: Field reports from the Indian regional agency. Standard column naming.
-      - name: PACIFIC
+      - name: pacific
         description: Field reports from the Pacific regional agency. Custom column naming.
-      - name: country_cities
-        description: >
-          Reference mapping of ISO 3166 alpha-2 country codes to full country names,
-          covering every country referenced across the 8 regional reports (134 countries).

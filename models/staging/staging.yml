@@ -1,0 +1,90 @@
+version: 2
+
+models:
+  - name: stg_africa_sightings
+    description: |
+      Field reports from the Africa regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_america_sightings
+    description: |
+      Field reports from the America regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_asia_sightings
+    description: |
+      Field reports from the Asia regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_atlantic_sightings
+    description: |
+      Field reports from the Atlantic regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_australia_sightings
+    description: |
+      Field reports from the Australia regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_europe_sightings
+    description: |
+      Field reports from the Europe regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_indian_sightings
+    description: |
+      Field reports from the Indian regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: stg_pacific_sightings
+    description: |
+      Field reports from the Pacific regional agency, mapped to a common data
+      dictionary. Primary key is sighting_id.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
