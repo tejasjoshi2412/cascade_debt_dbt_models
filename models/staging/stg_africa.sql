@@ -22,12 +22,7 @@ renamed as (
         behavior,
 
         -- deterministic surrogate key for the sighting grain
-        md5(
-            coalesce(cast(date_witness as text), '')
-            || '|' || coalesce(witness, '')
-            || '|' || coalesce(city, '')
-            || '|' || coalesce(country, '')
-        ) as sighting_id,
+        {{ dbt_utils.generate_surrogate_key(['date_witness', 'witness', 'city', 'country']) }} as sighting_id,
 
         'AFRICA' as region
 
