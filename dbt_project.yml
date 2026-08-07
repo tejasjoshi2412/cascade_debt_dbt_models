@@ -1,0 +1,30 @@
+name: 'cascade_debt_dbt_models'
+version: '1.0.0'
+config-version: 2
+
+profile: 'cascade_debt'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  cascade_debt_dbt_models:
+    +schema: raw
+
+models:
+  cascade_debt_dbt_models:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    core:
+      +materialized: table
