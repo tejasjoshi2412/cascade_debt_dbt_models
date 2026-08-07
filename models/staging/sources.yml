@@ -29,5 +29,5 @@ sources:
         description: Field reports from the Pacific regional agency. Custom column naming.
       - name: country_cities
         description: >
-          Reference mapping of every city to its ISO 3166 alpha-2 country code and
-          full country name, across all 8 regional reports. Includes Okahandja -> NA (Namibia).
+          Reference mapping of ISO 3166 alpha-2 country codes to full country names,
+          covering every country referenced across the 8 regional reports (134 countries).
