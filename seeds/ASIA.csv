@@ -1,4 +1,4 @@
-sighting,报道,citizen,officer,纬度,经度,city,nation,city_interpol,has_weapon,has_hat,has_jacket,behavior
+sighting,date_agent,citizen,officer,latitude,longitude,city,nation,city_interpol,has_weapon,has_hat,has_jacket,behavior
 1995-09-27,1995-10-13,Caleb Jones,Karen Keller MD,40.11583,67.84222,Jizzax,UZ,Samarkand,False,True,True,tense
 1996-09-12,1996-09-18,John Archer,Kelly Barnes,33.37526,74.3092,Rajaori,IN,Kolkata,False,True,True,confessing
 2005-10-14,2005-12-12,Shane Taylor,Laura Parks,14.95472,120.89694,Baliuag,PH,Manila,False,False,True,confessing
