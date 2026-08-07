@@ -1,51 +1,75 @@
-with source as (
+WITH source AS (
+  SELECT
+    sighting_id,
+    date_witness,
+    date_agent,
+    region,
+    country,
+    city,
+    agent,
+    city_agent,
+    witness,
+    behavior,
+    has_weapon,
+    has_hat,
+    has_jacket
 
-    select * from {{ ref('int_sightings') }}
-
+  FROM {{ ref('int_sightings') }}
 ),
 
-witness as (
-    select * from {{ ref('dim_witness') }}
+witness AS (
+    SELECT * FROM {{ ref('dim_sighting_witness') }}
 ),
-agent as (
-    select * from {{ ref('dim_agent') }}
+agent AS (
+    SELECT * FROM {{ ref('dim_agent') }}
 ),
-location as (
-    select * from {{ ref('dim_location') }}
+location AS (
+    SELECT * FROM {{ ref('dim_sighting_location') }}
 ),
-behavior as (
-    select * from {{ ref('dim_behavior') }}
+behavior AS (
+    SELECT * FROM {{ ref('dim_sighting_behavior') }}
 ),
 
-final as (
+final AS (
+  SELECT
+    s.sighting_id,
+    s.date_witness,
+    s.date_agent,
+    s.region,
+    w.witness_id,
+    a.agent_id,
+    l.location_id,
+    b.behavior_id,
+    s.has_weapon,
+    s.has_hat,
+    s.has_jacket
 
-    select
-        s.sighting_id,
-        s.date_witness,
-        s.date_agent,
-        s.region,
-        w.witness_id,
-        a.agent_id,
-        l.location_id,
-        b.behavior_id,
-        s.has_weapon,
-        s.has_hat,
-        s.has_jacket
-
-    from source as s
-    left join witness as w
-        on s.witness = w.witness_name
-    left join agent as a
-        on s.agent = a.agent_name
-        and s.city_agent = a.agent_hq_city
-        and s.region = a.region
-    left join location as l
-        on s.city = l.city
-        and s.country = l.country
-        and s.region = l.region
-    left join behavior as b
-        on s.behavior = b.behavior_name
-
+  FROM source s
+  LEFT JOIN witness w
+    ON s.witness = w.witness_name
+  LEFT JOIN agent a
+    ON s.agent = a.agent_name
+      AND s.city_agent = a.agent_hq_city
+      AND s.region = a.region
+  LEFT JOIN location l
+    ON s.city = l.city
+      AND s.country = l.country
+      AND s.region = l.region
+  LEFT JOIN behavior b
+      ON s.behavior = b.behavior_name
 )
 
-select * from final
+SELECT
+  sighting_id,
+  date_witness,
+  date_agent,
+  region,
+  witness_id,
+  agent_id,
+  location_id,
+  behavior_id,
+  has_weapon,
+  has_hat,
+  has_jacket
+
+FROM final

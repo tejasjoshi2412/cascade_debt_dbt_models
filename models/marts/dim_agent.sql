@@ -1,19 +1,17 @@
-with source as (
+WITH source AS (
+  SELECT
+    agent_id,
+    agent_name,
+    agent_hq_city,
+    region
 
-    select * from {{ ref('int_sightings') }}
-
-),
-
-final as (
-
-    select distinct
-        {{ dbt_utils.generate_surrogate_key(['agent', 'city_agent', 'region']) }} as agent_id,
-        agent as agent_name,
-        city_agent as agent_hq_city,
-        region
-
-    from source
-
+  FROM {{ ref('int_agent') }}
 )
 
-select * from final
+SELECT
+  agent_id,
+  agent_name,
+  agent_hq_city,
+  region
+
+FROM source

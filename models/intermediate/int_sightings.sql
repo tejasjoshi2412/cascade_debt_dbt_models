@@ -1,51 +1,52 @@
-with
-
-africa as (
-    select * from {{ ref('stg_africa_sightings') }}
-),
-america as (
-    select * from {{ ref('stg_america_sightings') }}
-),
-asia as (
-    select * from {{ ref('stg_asia_sightings') }}
-),
-atlantic as (
-    select * from {{ ref('stg_atlantic_sightings') }}
-),
-australia as (
-    select * from {{ ref('stg_australia_sightings') }}
-),
-europe as (
-    select * from {{ ref('stg_europe_sightings') }}
-),
-indian as (
-    select * from {{ ref('stg_indian_sightings') }}
-),
-pacific as (
-    select * from {{ ref('stg_pacific_sightings') }}
-),
-
-unioned as (
-
-    select * from africa
-    union all
-    select * from america
-    union all
-    select * from asia
-    union all
-    select * from atlantic
-    union all
-    select * from australia
-    union all
-    select * from europe
-    union all
-    select * from indian
-    union all
-    select * from pacific
-
+WITH unioned AS (
+  SELECT 
+    * 
+  FROM {{ ref('stg_africa_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_america_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_asia_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_atlantic_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_australia_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_europe_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_indian_sightings') }}
+    
+  UNION ALL
+    
+  SELECT 
+    * 
+  FROM {{ ref('stg_pacific_sightings') }}
 )
 
-select
+SELECT
     sighting_id,
     date_witness,
     agent,
@@ -62,4 +63,4 @@ select
     behavior,
     region
 
-from unioned
+FROM unioned
