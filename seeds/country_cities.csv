@@ -1,135 +1,959 @@
-country_code,country_name
-AD,Andorra
-AF,Afghanistan
-AM,Armenia
-AO,Angola
-AR,Argentina
-AT,Austria
-AU,Australia
-AZ,Azerbaijan
-BA,Bosnia and Herzegovina
-BD,Bangladesh
-BE,Belgium
-BG,Bulgaria
-BJ,Benin
-BO,Bolivia
-BR,Brazil
-BW,Botswana
-BY,Belarus
-CA,Canada
-CD,Democratic Republic of the Congo
-CF,Central African Republic
-CG,Congo
-CH,Switzerland
-CI,Cote d'Ivoire
-CL,Chile
-CM,Cameroon
-CN,China
-CO,Colombia
-CR,Costa Rica
-CU,Cuba
-CZ,Czechia
-DE,Germany
-DJ,Djibouti
-DK,Denmark
-DO,Dominican Republic
-DZ,Algeria
-EC,Ecuador
-EE,Estonia
-EG,Egypt
-ES,Spain
-ET,Ethiopia
-FI,Finland
-FR,France
-GA,Gabon
-GB,United Kingdom
-GE,Georgia
-GH,Ghana
-GM,Gambia
-GN,Guinea
-GT,Guatemala
-HK,Hong Kong
-HN,Honduras
-HR,Croatia
-HT,Haiti
-ID,Indonesia
-IE,Ireland
-IL,Israel
-IN,India
-IQ,Iraq
-IR,Iran
-IT,Italy
-JM,Jamaica
-JP,Japan
-KE,Kenya
-KG,Kyrgyzstan
-KH,Cambodia
-KR,South Korea
-KZ,Kazakhstan
-LK,Sri Lanka
-LR,Liberia
-LT,Lithuania
-LY,Libya
-MA,Morocco
-MD,Moldova
-ME,Montenegro
-MG,Madagascar
-MK,North Macedonia
-ML,Mali
-MM,Myanmar
-MN,Mongolia
-MQ,Martinique
-MT,Malta
-MW,Malawi
-MX,Mexico
-MY,Malaysia
-MZ,Mozambique
-NE,Niger
-NG,Nigeria
-NI,Nicaragua
-NL,Netherlands
-NO,Norway
-NZ,New Zealand
-PA,Panama
-PE,Peru
-PG,Papua New Guinea
-PH,Philippines
-PK,Pakistan
-PL,Poland
-PR,Puerto Rico
-PS,Palestine
-PT,Portugal
-RE,Reunion
-RO,Romania
-RS,Serbia
-RU,Russia
-RW,Rwanda
-SA,Saudi Arabia
-SD,Sudan
-SE,Sweden
-SK,Slovakia
-SL,Sierra Leone
-SO,Somalia
-SV,El Salvador
-SY,Syria
-TD,Chad
-TH,Thailand
-TJ,Tajikistan
-TL,Timor-Leste
-TN,Tunisia
-TR,Turkey
-TT,Trinidad and Tobago
-TW,Taiwan
-TZ,Tanzania
-UA,Ukraine
-UG,Uganda
-US,United States
-UY,Uruguay
-UZ,Uzbekistan
-VE,Venezuela
-VN,Vietnam
-VU,Vanuatu
-XK,Kosovo
-YE,Yemen
-ZA,South Africa
-,Namibia
+country_code,country_name,city
+AD,Andorra,les Escaldes
+AF,Afghanistan,Sar-e Pul
+AM,Armenia,Hrazdan
+AO,Angola,Luena
+AR,Argentina,Aguilares
+AR,Argentina,Barracas
+AR,Argentina,Chacabuco
+AR,Argentina,Esperanza
+AR,Argentina,Pontevedra
+AR,Argentina,Rafaela
+AR,Argentina,Tandil
+AR,Argentina,Ushuaia
+AT,Austria,Floridsdorf
+AT,Austria,Sankt Peter
+AU,Australia,Baulkham Hills
+AU,Australia,Carindale
+AU,Australia,Carnegie
+AU,Australia,Eastwood
+AU,Australia,Frankston South
+AU,Australia,Griffith
+AU,Australia,Maryborough
+AU,Australia,Nowra
+AU,Australia,Perth
+AU,Australia,Strathfield
+AU,Australia,Wheelers Hill
+AU,Australia,Willetton
+AZ,Azerbaijan,Astara
+AZ,Azerbaijan,Qazax
+BA,Bosnia and Herzegovina,Bijeljina
+BD,Bangladesh,Kushtia
+BD,Bangladesh,Manikchari
+BE,Belgium,Beveren
+BE,Belgium,Denderleeuw
+BE,Belgium,Gembloux
+BE,Belgium,Houthalen
+BE,Belgium,Lille
+BE,Belgium,Mouscron
+BE,Belgium,Rixensart
+BE,Belgium,Temse
+BE,Belgium,Wevelgem
+BG,Bulgaria,Aytos
+BG,Bulgaria,Montana
+BG,Bulgaria,Smolyan
+BJ,Benin,Tchaourou
+BO,Bolivia,Tupiza
+BR,Brazil,Alfenas
+BR,Brazil,Altamira
+BR,Brazil,Aracaju
+BR,Brazil,Artur Nogueira
+BR,Brazil,Barra dos Coqueiros
+BR,Brazil,Barras
+BR,Brazil,Buri
+BR,Brazil,Cabo
+BR,Brazil,Caldas Novas
+BR,Brazil,Canavieiras
+BR,Brazil,Carlos Barbosa
+BR,Brazil,Catende
+BR,Brazil,Curitiba
+BR,Brazil,Esmeraldas
+BR,Brazil,Guapimirim
+BR,Brazil,Guaraciaba do Norte
+BR,Brazil,Imbituba
+BR,Brazil,Itabirito
+BR,Brazil,Itacoatiara
+BR,Brazil,Itaperuna
+BR,Brazil,Iturama
+BR,Brazil,Lagarto
+BR,Brazil,Loanda
+BR,Brazil,Marau
+BR,Brazil,Miracema
+BR,Brazil,Muritiba
+BR,Brazil,Nova Xavantina
+BR,Brazil,Palmeira
+BR,Brazil,Pato Branco
+BR,Brazil,Pedro II
+BR,Brazil,Porto Velho
+BR,Brazil,Recife
+BR,Brazil,Resplendor
+BR,Brazil,Rio Real
+BR,Brazil,Santa Gertrudes
+BR,Brazil,Sarandi
+BR,Brazil,Soledade
+BR,Brazil,Soure
+BR,Brazil,Tucano
+BR,Brazil,Valinhos
+BR,Brazil,Viradouro
+BW,Botswana,Tonota
+BY,Belarus,Dobrush
+BY,Belarus,Novogrudok
+BY,Belarus,Vitebsk
+CA,Canada,Beaconsfield
+CA,Canada,Charlottetown
+CA,Canada,Dorval
+CA,Canada,Kelowna
+CA,Canada,Markham
+CA,Canada,Norfolk County
+CA,Canada,Pointe-Claire
+CA,Canada,Sainte-Catherine
+CA,Canada,Sherwood Park
+CA,Canada,Sydney
+CA,Canada,Vernon
+CD,Democratic Republic of the Congo,Beni
+CD,Democratic Republic of the Congo,Kamina
+CD,Democratic Republic of the Congo,Kasangulu
+CD,Democratic Republic of the Congo,Yangambi
+CF,Central African Republic,Carnot
+CG,Congo,Brazzaville
+CH,Switzerland,Adliswil
+CH,Switzerland,Onex
+CI,Cote d'Ivoire,Bonoua
+CI,Cote d'Ivoire,Lakota
+CL,Chile,Chiguayante
+CL,Chile,La Ligua
+CL,Chile,Ovalle
+CL,Chile,San Bernardo
+CM,Cameroon,Idenao
+CM,Cameroon,Mbalmayo
+CM,Cameroon,Tonga
+CN,China,Beidao
+CN,China,Boli
+CN,China,Changshu City
+CN,China,Changzhi
+CN,China,Danjiangkou
+CN,China,Dongdu
+CN,China,Dongfeng
+CN,China,Foshan
+CN,China,Guli
+CN,China,Haicheng
+CN,China,Hengshui
+CN,China,Heyuan
+CN,China,Hoxtolgay
+CN,China,Huangshi
+CN,China,Hushitai
+CN,China,Jiangyan
+CN,China,Jingzhou
+CN,China,Laiwu
+CN,China,Liaoyang
+CN,China,Licheng
+CN,China,Longgang
+CN,China,Meizhou
+CN,China,Nanpiao
+CN,China,Pingyi
+CN,China,Pucheng
+CN,China,Shaowu
+CN,China,Shuangcheng
+CN,China,Sishui
+CN,China,Taozhuang
+CN,China,Tianfu
+CN,China,Ulanhot
+CN,China,Wacheng
+CN,China,Xiangtan
+CN,China,Xinzhou
+CN,China,Yanliang
+CN,China,Yingkou
+CN,China,Zaozhuang
+CN,China,Zhoucun
+CN,China,Zhoushan
+CN,China,Zhuangyuan
+CO,Colombia,Andes
+CO,Colombia,Buenaventura
+CO,Colombia,El Copey
+CO,Colombia,Honda
+CO,Colombia,Madrid
+CO,Colombia,Puerto Colombia
+CO,Colombia,San Carlos
+CO,Colombia,Socorro
+CO,Colombia,Villa del Rosario
+CR,Costa Rica,Liberia
+CR,Costa Rica,San Rafael
+CU,Cuba,Boyeros
+CU,Cuba,Corralillo
+CU,Cuba,Jaruco
+CU,Cuba,Media Luna
+CU,Cuba,Varadero
+CZ,Czechia,Karlovy Vary
+CZ,Czechia,Most
+DE,Germany,Albstadt
+DE,Germany,Aschaffenburg
+DE,Germany,Bad Honnef
+DE,Germany,Bad Segeberg
+DE,Germany,Barmbek-Nord
+DE,Germany,Bensheim
+DE,Germany,Bretten
+DE,Germany,Burscheid
+DE,Germany,Charlottenburg-Nord
+DE,Germany,Dahlem
+DE,Germany,Ehingen
+DE,Germany,Eppingen
+DE,Germany,Finnentrop
+DE,Germany,Friedberg
+DE,Germany,Gauting
+DE,Germany,Gifhorn
+DE,Germany,Gronau
+DE,Germany,Halstenbek
+DE,Germany,Hechingen
+DE,Germany,Hermsdorf
+DE,Germany,Hofheim am Taunus
+DE,Germany,Karben
+DE,Germany,Kirchlengern
+DE,Germany,Korschenbroich
+DE,Germany,Landshut
+DE,Germany,Losheim
+DE,Germany,Marburg an der Lahn
+DE,Germany,Memmingen
+DE,Germany,Neuburg an der Donau
+DE,Germany,Nidderau
+DE,Germany,Oberhausen
+DE,Germany,Oschatz
+DE,Germany,Pfullingen
+DE,Germany,Radevormwald
+DE,Germany,Reutlingen
+DE,Germany,Rudolstadt
+DE,Germany,Schleswig
+DE,Germany,Schwalmtal
+DE,Germany,Siegburg
+DE,Germany,Stade
+DE,Germany,Stuttgart
+DE,Germany,Trossingen
+DE,Germany,Verl
+DE,Germany,Walsrode
+DE,Germany,Weimar
+DE,Germany,Wesseling
+DE,Germany,Wittenau
+DE,Germany,Zeitz
+DJ,Djibouti,'Ali Sabieh
+DK,Denmark,Frederiksberg
+DO,Dominican Republic,Santa Cruz de Barahona
+DZ,Algeria,Beni Douala
+DZ,Algeria,Bordj Zemoura
+DZ,Algeria,Boumerdas
+DZ,Algeria,Cheraga
+DZ,Algeria,El Achir
+DZ,Algeria,Frenda
+DZ,Algeria,Ksar Chellala
+DZ,Algeria,Messaad
+DZ,Algeria,Thenia
+EC,Ecuador,Cuenca
+EC,Ecuador,Milagro
+EE,Estonia,Narva
+EG,Egypt,Alexandria
+EG,Egypt,Juhaynah
+ES,Spain,Amposta
+ES,Spain,Baza
+ES,Spain,Caravaca
+ES,Spain,Cardedeu
+ES,Spain,Ferrol
+ES,Spain,Gandia
+ES,Spain,Gernika-Lumo
+ES,Spain,Jumilla
+ES,Spain,Las Gabias
+ES,Spain,Leioa
+ES,Spain,Maspalomas
+ES,Spain,Novelda
+ES,Spain,Palafrugell
+ES,Spain,Puertollano
+ES,Spain,Reus
+ES,Spain,San Fernando de Henares
+ES,Spain,San Juan de Aznalfarache
+ES,Spain,Segundo Ensanche
+ES,Spain,Talavera de la Reina
+ES,Spain,Tudela
+ES,Spain,Villaquilambre
+ES,Spain,el Camp de l'Arpa del Clot
+ET,Ethiopia,Arba Minch
+ET,Ethiopia,Debre Tabor
+FI,Finland,Espoo
+FI,Finland,Kallio
+FI,Finland,Tornio
+FR,France,Ajaccio
+FR,France,Arles
+FR,France,Bar-le-Duc
+FR,France,Bobigny
+FR,France,Bron
+FR,France,Cavaillon
+FR,France,Colomiers
+FR,France,Dax
+FR,France,Elbeuf
+FR,France,Fontenay-aux-Roses
+FR,France,Gonesse
+FR,France,Herblay
+FR,France,La Garenne-Colombes
+FR,France,Le Chesnay
+FR,France,Les Olives
+FR,France,Lons-le-Saunier
+FR,France,Marly-le-Roi
+FR,France,Marseille 11
+FR,France,Mitry-Mory
+FR,France,Montpellier
+FR,France,Niort
+FR,France,Pamiers
+FR,France,Quimper
+FR,France,Rueil-Malmaison
+FR,France,Saint-Genis-Laval
+FR,France,Saint-Omer
+FR,France,Sceaux
+FR,France,Talence
+FR,France,Valence
+FR,France,Vienne
+GA,Gabon,Franceville
+GB,United Kingdom,Aberdeen
+GB,United Kingdom,Arbroath
+GB,United Kingdom,Barnet
+GB,United Kingdom,Belper
+GB,United Kingdom,Blackpool
+GB,United Kingdom,Brierley Hill
+GB,United Kingdom,Bushey
+GB,United Kingdom,Chapletown
+GB,United Kingdom,Clacton-on-Sea
+GB,United Kingdom,Cowes
+GB,United Kingdom,Devizes
+GB,United Kingdom,East Dereham
+GB,United Kingdom,Exeter
+GB,United Kingdom,Gainsborough
+GB,United Kingdom,Great Wyrley
+GB,United Kingdom,Hartley
+GB,United Kingdom,High Wycombe
+GB,United Kingdom,Inverness
+GB,United Kingdom,Kingston upon Hull
+GB,United Kingdom,Lancing
+GB,United Kingdom,Leyland
+GB,United Kingdom,Lower Earley
+GB,United Kingdom,Lymington
+GB,United Kingdom,Mexborough
+GB,United Kingdom,Newbury
+GB,United Kingdom,Penzance
+GB,United Kingdom,Poulton-le-Fylde
+GB,United Kingdom,Rhosllanerchrugog
+GB,United Kingdom,Rutherglen
+GB,United Kingdom,Selby
+GB,United Kingdom,Southsea
+GB,United Kingdom,Strood
+GB,United Kingdom,Surbiton
+GB,United Kingdom,Thetford
+GB,United Kingdom,Viewpark
+GB,United Kingdom,Walton-on-the-Naze
+GB,United Kingdom,Westbury
+GB,United Kingdom,Winsford
+GE,Georgia,Kobuleti
+GH,Ghana,Bibiani
+GH,Ghana,Mampong
+GH,Ghana,Tarkwa
+GM,Gambia,Farafenni
+GN,Guinea,Camayenne
+GT,Guatemala,Chichicastenango
+HK,Hong Kong,Tsuen Wan
+HN,Honduras,Olanchito
+HR,Croatia,Split
+HT,Haiti,Croix-des-Bouquets
+HT,Haiti,Thomazeau
+ID,Indonesia,Balikpapan
+ID,Indonesia,Besuki
+ID,Indonesia,Cibinong
+ID,Indonesia,Diwek
+ID,Indonesia,Jambi City
+ID,Indonesia,Kediri
+ID,Indonesia,Kudus
+ID,Indonesia,Labuhan Deli
+ID,Indonesia,Majene
+ID,Indonesia,Muncar
+ID,Indonesia,Ngemplak
+ID,Indonesia,Pameungpeuk
+ID,Indonesia,Pekanbaru
+ID,Indonesia,Randudongkal
+ID,Indonesia,Simpang
+ID,Indonesia,Sukabumi
+ID,Indonesia,Tarakan
+ID,Indonesia,Tebingtinggi
+ID,Indonesia,Wangon
+IE,Ireland,An Muileann gCearr
+IE,Ireland,Athlone
+IL,Israel,Ganei Tikva
+IL,Israel,Rahat
+IL,Israel,Ramla
+IN,India,Adra
+IN,India,Aistala
+IN,India,Aklera
+IN,India,Alwaye
+IN,India,Amreli
+IN,India,Bachhraon
+IN,India,Barbil
+IN,India,Barpeta
+IN,India,Betamcherla
+IN,India,Bhayandar
+IN,India,Bhuban
+IN,India,Calangute
+IN,India,Chamba
+IN,India,Chharra
+IN,India,Dalsingh Sarai
+IN,India,Davangere
+IN,India,Deoli
+IN,India,Dharmapuri
+IN,India,Diamond Harbour
+IN,India,Dombivli
+IN,India,Elamanchili
+IN,India,Gajendragarh
+IN,India,Gariadhar
+IN,India,Gingee
+IN,India,Gorakhpur
+IN,India,Haldwani
+IN,India,Hungund
+IN,India,Jais
+IN,India,Jashpurnagar
+IN,India,Kalavoor
+IN,India,Kangayam
+IN,India,Kashipur
+IN,India,Kenda
+IN,India,Kheda
+IN,India,Kundla
+IN,India,Lal Bahadur Nagar
+IN,India,Leteri
+IN,India,Madhipura
+IN,India,Malaut
+IN,India,Manjeri
+IN,India,Meerut
+IN,India,Moga
+IN,India,Narwar
+IN,India,Osmanabad
+IN,India,Pandua
+IN,India,Parola
+IN,India,Patti
+IN,India,Periyakulam
+IN,India,Pilkhua
+IN,India,Puducherry
+IN,India,Pujali
+IN,India,Pune
+IN,India,Rafiganj
+IN,India,Rajaori
+IN,India,Rangia
+IN,India,Robertsonpet
+IN,India,Saharsa
+IN,India,Sambalpur
+IN,India,Sathyamangalam
+IN,India,Sheoganj
+IN,India,Sirsi
+IN,India,Sojat
+IN,India,Srinagar
+IN,India,Supaul
+IN,India,Talipparamba
+IN,India,Teghra
+IN,India,Tiruppuvanam
+IN,India,Udumalaippettai
+IN,India,Uran
+IQ,Iraq,Karbala
+IR,Iran,Aleshtar
+IR,Iran,Darreh Shahr
+IR,Iran,Isfahan
+IR,Iran,Nowshahr
+IR,Iran,Shahre Jadide Andisheh
+IT,Italy,Afragola
+IT,Italy,Agrigento
+IT,Italy,Ariccia
+IT,Italy,Bisceglie
+IT,Italy,Campobasso
+IT,Italy,Castelfranco Emilia
+IT,Italy,Catania
+IT,Italy,Chiavari
+IT,Italy,Cordenons
+IT,Italy,Falconara Marittima
+IT,Italy,Francavilla Fontana
+IT,Italy,Gorgonzola
+IT,Italy,Lanciano
+IT,Italy,Malnate
+IT,Italy,Mesagne
+IT,Italy,Misterbianco
+IT,Italy,Montecchio Maggiore-Alte Ceccato
+IT,Italy,Novara
+IT,Italy,Perugia
+IT,Italy,Portogruaro
+IT,Italy,Ragusa
+IT,Italy,Roseto degli Abruzzi
+IT,Italy,San Giuliano Milanese
+IT,Italy,Sassari
+IT,Italy,Somma Vesuviana
+IT,Italy,Tortona
+IT,Italy,Ventimiglia
+IT,Italy,Villabate
+IT,Italy,Volla
+JM,Jamaica,New Kingston
+JP,Japan,Annaka
+JP,Japan,Fujioka
+JP,Japan,Gero
+JP,Japan,Hakodate
+JP,Japan,Hita
+JP,Japan,Ina
+JP,Japan,Inawashiro
+JP,Japan,Iwade
+JP,Japan,Kamakura
+JP,Japan,Karatsu
+JP,Japan,Komono
+JP,Japan,Minokamo
+JP,Japan,Motomachi
+JP,Japan,Namerikawa
+JP,Japan,Nayoro
+JP,Japan,Nonoichi
+JP,Japan,Okegawa
+JP,Japan,Sasayama
+JP,Japan,Shimotoda
+JP,Japan,Shinshiro
+JP,Japan,Suzaka
+JP,Japan,Toba
+JP,Japan,Toyokawa
+JP,Japan,Ueno-ebisumachi
+JP,Japan,Yamada
+JP,Japan,Yao
+KE,Kenya,Busia
+KE,Kenya,Lodwar
+KE,Kenya,Nyahururu
+KG,Kyrgyzstan,Jalal-Abad
+KH,Cambodia,Paoy Paet
+KR,South Korea,Eisen
+KR,South Korea,Goyang-si
+KR,South Korea,Hongseong
+KR,South Korea,Nonsan
+KR,South Korea,Sinhyeon
+KR,South Korea,T‚Äôaebaek
+KZ,Kazakhstan,Kyzylorda
+KZ,Kazakhstan,Otegen Batyra
+KZ,Kazakhstan,Shalqar
+KZ,Kazakhstan,Zaysan
+LK,Sri Lanka,Dehiwala-Mount Lavinia
+LK,Sri Lanka,Hendala
+LR,Liberia,New Yekepa
+LT,Lithuania,Alytus
+LT,Lithuania,Ukmerge
+LY,Libya,Ajdabiya
+LY,Libya,Ghat
+MA,Morocco,Azrou
+MA,Morocco,Jerada
+MA,Morocco,Oulmes
+MA,Morocco,Temara
+MD,Moldova,Soroca
+ME,Montenegro,Budva
+MG,Madagascar,Ambatondrazaka
+MG,Madagascar,Antanifotsy
+MG,Madagascar,Ikalamavony
+MG,Madagascar,Sakaraha
+MK,North Macedonia,Bogovinje
+MK,North Macedonia,Saraj
+ML,Mali,Kati
+MM,Myanmar,Dawei
+MM,Myanmar,Kyaikto
+MM,Myanmar,Myawadi
+MN,Mongolia,Ulan Bator
+MQ,Martinique,Le Robert
+MT,Malta,Valletta
+MW,Malawi,Salima
+MX,Mexico,Acaponeta
+MX,Mexico,Acayucan
+MX,Mexico,Casa Blanca
+MX,Mexico,Contla
+MX,Mexico,Guanajuato
+MX,Mexico,Heroica Matamoros
+MX,Mexico,Jocotepec
+MX,Mexico,Oaxaca
+MX,Mexico,Paracho de Verduzco
+MX,Mexico,Progreso
+MX,Mexico,Salvatierra
+MX,Mexico,San Lorenzo Acopilco
+MX,Mexico,Santa Rosa Jauregui
+MX,Mexico,Teziutlan
+MX,Mexico,Tuxtla
+MX,Mexico,Zacoalco de Torres
+MY,Malaysia,Batu Feringgi
+MY,Malaysia,Donggongon
+MY,Malaysia,Gua Musang
+MY,Malaysia,Kampung Ayer Molek
+MY,Malaysia,Kulai
+MY,Malaysia,Teluk Intan
+MY,Malaysia,Ulu Tiram
+MZ,Mozambique,Maxixe
+NA,Namibia,Okahandja
+NE,Niger,Mirriah
+NG,Nigeria,Argungu
+NG,Nigeria,Biu
+NG,Nigeria,Efon-Alaaye
+NG,Nigeria,Gaya
+NG,Nigeria,Igbara-Odo
+NG,Nigeria,Ilesa
+NG,Nigeria,Kafanchan
+NG,Nigeria,Lagos
+NG,Nigeria,Nkpor
+NG,Nigeria,Olupona
+NG,Nigeria,Shagamu
+NG,Nigeria,Yenagoa
+NI,Nicaragua,Jinotepe
+NI,Nicaragua,Somoto
+NL,Netherlands,Barneveld
+NL,Netherlands,Culemborg
+NL,Netherlands,Emmeloord
+NL,Netherlands,Hardenberg
+NL,Netherlands,Hoogezand
+NL,Netherlands,Losser
+NL,Netherlands,Oldenzaal
+NL,Netherlands,Schiebroek
+NL,Netherlands,Tongelre
+NL,Netherlands,Vught
+NL,Netherlands,Zeist
+NO,Norway,Harstad
+NZ,New Zealand,Gisborne
+NZ,New Zealand,Timaru
+PA,Panama,Chilibre
+PA,Panama,Veracruz
+PE,Peru,Chosica
+PE,Peru,Iquitos
+PE,Peru,Minas de Marcona
+PE,Peru,Yunguyo
+PG,Papua New Guinea,Mount Hagen
+PH,Philippines,Antipolo
+PH,Philippines,Baliuag
+PH,Philippines,Burgos
+PH,Philippines,Calauan
+PH,Philippines,Cebu City
+PH,Philippines,Dipolog
+PH,Philippines,Guyong
+PH,Philippines,Jagna
+PH,Philippines,La Trinidad
+PH,Philippines,Maasin
+PH,Philippines,Manaoag
+PH,Philippines,Masbate
+PH,Philippines,Naga
+PH,Philippines,Pilar
+PH,Philippines,Recodo
+PH,Philippines,San Jose
+PH,Philippines,Santa Catalina
+PH,Philippines,Sorsogon
+PH,Philippines,Talisay
+PH,Philippines,Tupi
+PK,Pakistan,Alipur
+PK,Pakistan,Bhit Shah
+PK,Pakistan,Daud Khel
+PK,Pakistan,Fazilpur
+PK,Pakistan,Hasilpur
+PK,Pakistan,Jhol
+PK,Pakistan,Kanganpur
+PK,Pakistan,Khairpur Mir‚Äôs
+PK,Pakistan,Kot Addu
+PK,Pakistan,Larkana
+PK,Pakistan,Mianwali
+PK,Pakistan,Naushahra Virkan
+PK,Pakistan,Qadirpur Ran
+PK,Pakistan,Sangla Hill
+PK,Pakistan,Sillanwali
+PK,Pakistan,Tharu Shah
+PL,Poland,Brzeg
+PL,Poland,Jaworzno
+PL,Poland,Reda
+PL,Poland,Strzelce Opolskie
+PL,Poland,Ustka
+PL,Poland,Zgorzelec
+PR,Puerto Rico,Aguadilla
+PR,Puerto Rico,Yauco
+PS,Palestine,East Jerusalem
+PT,Portugal,Albufeira
+PT,Portugal,Carnaxide
+PT,Portugal,Custoias
+PT,Portugal,Paredes
+PT,Portugal,Ponta Delgada
+RE,Reunion,Saint-Denis
+RO,Romania,Sector 6
+RS,Serbia,Negotin
+RS,Serbia,Sremska Mitrovica
+RU,Russia,Alatyr‚Äô
+RU,Russia,Arzamas
+RU,Russia,Aykhal
+RU,Russia,Bavly
+RU,Russia,Beryozovsky
+RU,Russia,Bogoroditsk
+RU,Russia,Buynaksk
+RU,Russia,Danilov
+RU,Russia,Dyat‚Äôkovo
+RU,Russia,Gavrilov-Yam
+RU,Russia,Gudermes
+RU,Russia,Ishim
+RU,Russia,Izluchinsk
+RU,Russia,Kachkanar
+RU,Russia,Kashira
+RU,Russia,Kireyevsk
+RU,Russia,Kolomyagi
+RU,Russia,Kovylkino
+RU,Russia,Krymsk
+RU,Russia,Kuvandyk
+RU,Russia,Lesnoy
+RU,Russia,Lesosibirsk
+RU,Russia,Lesozavodsk
+RU,Russia,Likhobory
+RU,Russia,Malakhovka
+RU,Russia,Mikhaylovka
+RU,Russia,Naro-Fominsk
+RU,Russia,Nikolayevsk-on-Amure
+RU,Russia,Nizhniy Lomov
+RU,Russia,Novopavlovsk
+RU,Russia,Novosilikatnyy
+RU,Russia,Oktyabr‚Äôskiy
+RU,Russia,Otradnyy
+RU,Russia,Ozersk
+RU,Russia,Petrozavodsk
+RU,Russia,Privolzhskiy
+RU,Russia,Roslavl‚Äô
+RU,Russia,Saraktash
+RU,Russia,Severodvinsk
+RU,Russia,Sharypovo
+RU,Russia,Shushary
+RU,Russia,Solntsevo
+RU,Russia,Stupino
+RU,Russia,Tavda
+RU,Russia,Tver
+RU,Russia,Tyoply Stan
+RU,Russia,Ulan-Ude
+RU,Russia,Valday
+RU,Russia,Volokolamsk
+RU,Russia,Yablonovskiy
+RU,Russia,Yashkino
+RU,Russia,Yeysk
+RU,Russia,Zhukovka
+RW,Rwanda,Rwamagana
+SA,Saudi Arabia,Al Jubayl
+SD,Sudan,Ar Ruseris
+SE,Sweden,Boo
+SE,Sweden,Hudiksvall
+SK,Slovakia,Hlohovec
+SK,Slovakia,Skalica
+SL,Sierra Leone,Freetown
+SO,Somalia,Baki
+SO,Somalia,Kismayo
+SV,El Salvador,Ilopango
+SV,El Salvador,Sonzacate
+SY,Syria,Binnish
+SY,Syria,Tadmur
+TD,Chad,Mongo
+TH,Thailand,Bang Ban
+TH,Thailand,Bua Yai
+TH,Thailand,Damnoen Saduak
+TH,Thailand,Kantharalak
+TH,Thailand,Nakhon Pathom
+TH,Thailand,Nakhon Si Thammarat
+TH,Thailand,Phanat Nikhom
+TH,Thailand,Roi Et
+TH,Thailand,Tak Bai
+TH,Thailand,Thap Than
+TH,Thailand,Yasothon
+TJ,Tajikistan,Vahdat
+TL,Timor-Leste,Maliana
+TN,Tunisia,Beni Khiar
+TN,Tunisia,El Alia
+TN,Tunisia,Msaken
+TN,Tunisia,Siliana
+TR,Turkey,Aksaray
+TR,Turkey,Bergama
+TR,Turkey,Edremit
+TR,Turkey,Gaziantep
+TR,Turkey,Mardin
+TR,Turkey,Mudanya
+TR,Turkey,Patnos
+TR,Turkey,Serinhisar
+TR,Turkey,Silvan
+TR,Turkey,Sungurlu
+TR,Turkey,Yakuplu
+TT,Trinidad and Tobago,Port of Spain
+TW,Taiwan,Magong
+TZ,Tanzania,Chanika
+TZ,Tanzania,Iringa
+TZ,Tanzania,Kidodi
+TZ,Tanzania,Magomeni
+TZ,Tanzania,Mvomero
+TZ,Tanzania,Mwandiga
+TZ,Tanzania,Nyangao
+TZ,Tanzania,Same
+TZ,Tanzania,Usagara
+UA,Ukraine,Artsyz
+UA,Ukraine,Hlukhiv
+UA,Ukraine,Kherson
+UA,Ukraine,Krasyliv
+UA,Ukraine,Lutsk
+UA,Ukraine,Nova Kakhovka
+UA,Ukraine,Polohy
+UA,Ukraine,Shepetivka
+UA,Ukraine,Svatove
+UA,Ukraine,Voznesensk
+UA,Ukraine,Zvenihorodka
+UG,Uganda,Arua
+UG,Uganda,Kitgum
+UG,Uganda,Paidha
+US,United States,Abilene
+US,United States,Acworth
+US,United States,Ada
+US,United States,Aloha
+US,United States,American Canyon
+US,United States,Aurora
+US,United States,Beaumont
+US,United States,Belle Glade
+US,United States,Bon Air
+US,United States,Boston
+US,United States,Bothell
+US,United States,Bothell West
+US,United States,Bourbonnais
+US,United States,Brenham
+US,United States,Brentwood Estates
+US,United States,Bridgeport
+US,United States,Brighton Beach
+US,United States,Brunswick
+US,United States,Bryn Mawr-Skyway
+US,United States,Camarillo
+US,United States,Canton
+US,United States,Carlsbad
+US,United States,Chillum
+US,United States,Claremont
+US,United States,Clermont
+US,United States,Collinwood
+US,United States,Columbia Heights
+US,United States,Copperas Cove
+US,United States,Coralville
+US,United States,Covington
+US,United States,Crystal Lake
+US,United States,Cypress Hills
+US,United States,Davis
+US,United States,Deltona
+US,United States,Dublin
+US,United States,Dumont
+US,United States,East Haven
+US,United States,Encinitas
+US,United States,Estelle
+US,United States,Evergreen Park
+US,United States,Fairview Heights
+US,United States,Far Rockaway
+US,United States,Fayetteville
+US,United States,Fitchburg
+US,United States,Fort Washington
+US,United States,Fresno
+US,United States,Front Royal
+US,United States,Gainesville
+US,United States,Gates-North Gates
+US,United States,Gilbert
+US,United States,Glendale
+US,United States,Grand Forks
+US,United States,Granger
+US,United States,Greenfield
+US,United States,Greenpoint
+US,United States,Greenville
+US,United States,Harrisburg
+US,United States,Hueytown
+US,United States,Huntley
+US,United States,Hutchinson
+US,United States,Hutto
+US,United States,Independence
+US,United States,Indio
+US,United States,Iron River
+US,United States,Jackson
+US,United States,Jersey City
+US,United States,Kahului
+US,United States,Kaukauna
+US,United States,Kearns
+US,United States,Keene
+US,United States,Keizer
+US,United States,Ken Caryl
+US,United States,Kendall
+US,United States,Kensington
+US,United States,Kent
+US,United States,Laguna Niguel
+US,United States,Lakewood
+US,United States,Lebanon
+US,United States,Leland
+US,United States,Lexington
+US,United States,Lino Lakes
+US,United States,Lompoc
+US,United States,Longview
+US,United States,Lower West Side
+US,United States,Lutz
+US,United States,Malden
+US,United States,Martinsburg
+US,United States,Massapequa
+US,United States,Mechanicsville
+US,United States,Middle River
+US,United States,Middletown
+US,United States,Milledgeville
+US,United States,Mira Mesa
+US,United States,Morningside Heights
+US,United States,Murray
+US,United States,Muskogee
+US,United States,Nampa
+US,United States,New Canaan
+US,United States,New City
+US,United States,Newburgh
+US,United States,Norco
+US,United States,North Lauderdale
+US,United States,North Tustin
+US,United States,Norwalk
+US,United States,Nutley
+US,United States,Odessa
+US,United States,Opportunity
+US,United States,Pahrump
+US,United States,Palestine
+US,United States,Palm Desert
+US,United States,Palm Valley
+US,United States,Peabody
+US,United States,Pekin
+US,United States,Pleasant Prairie
+US,United States,Port Huron
+US,United States,Port Richmond
+US,United States,Porterville
+US,United States,Pottstown
+US,United States,Punta Gorda Isles
+US,United States,Redding
+US,United States,Riverbank
+US,United States,Rolla
+US,United States,Rosedale
+US,United States,Rosemount
+US,United States,Rutland
+US,United States,San Gabriel
+US,United States,San Juan
+US,United States,Santa Maria
+US,United States,Saratoga Springs
+US,United States,Scarsdale
+US,United States,Schererville
+US,United States,Scotch Plains
+US,United States,Scottsdale
+US,United States,Searcy
+US,United States,Shreveport
+US,United States,Sicklerville
+US,United States,South Lawndale
+US,United States,South Whittier
+US,United States,Sterling
+US,United States,Stockbridge
+US,United States,Sun City Center
+US,United States,Sunnyside
+US,United States,Taunton
+US,United States,Thomasville
+US,United States,Toledo
+US,United States,Troutdale
+US,United States,Tupelo
+US,United States,Tyler
+US,United States,Utica
+US,United States,Venice
+US,United States,Vestavia Hills
+US,United States,Visitacion Valley
+US,United States,Waterbury
+US,United States,Watsonville
+US,United States,Waverly
+US,United States,West Chester
+US,United States,West Des Moines
+US,United States,Westchester
+US,United States,Woodbridge
+US,United States,Woodlawn
+US,United States,Yonkers
+UY,Uruguay,Durazno
+UZ,Uzbekistan,Andijon
+UZ,Uzbekistan,Jizzax
+UZ,Uzbekistan,Parkent
+VE,Venezuela,Barinas
+VE,Venezuela,Ciudad Guayana
+VE,Venezuela,La Victoria
+VE,Venezuela,Tinaquillo
+VN,Vietnam,Sa Dec
+VU,Vanuatu,Port-Vila
+XK,Kosovo,Glogovac
+YE,Yemen,Ataq
+ZA,South Africa,Mokopane
+ZA,South Africa,Standerton
+ZA,South Africa,Vryheid
