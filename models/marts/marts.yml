@@ -1,0 +1,93 @@
+version: 2
+
+models:
+  - name: dim_agent
+    description: |
+      Dimension of field agents who file sightings, each linked to their regional
+      Interpol HQ city. Grain is one row per agent-HQ-region combination.
+    columns:
+      - name: agent_id
+        description: Primary key. Deterministic surrogate key identifying a unique agent-HQ-region combination.
+        data_tests:
+          - not_null
+          - unique
+      - name: agent_name
+        description: Full name of the field agent filing the report.
+      - name: agent_hq_city
+        description: HQ city of the regional agency where the agent files reports.
+      - name: region
+        description: Interpol agency region the agent belongs to (e.g. Africa, Europe, Asia).
+
+  - name: dim_sighting_behavior
+    description: |
+      Dimension of the behavior descriptors used to characterize the perpetrator.
+      Grain is one row per unique behavior.
+    columns:
+      - name: behavior_id
+        description: Primary key. Deterministic surrogate key identifying a unique behavior.
+        data_tests:
+          - not_null
+          - unique
+      - name: behavior_name
+        description: Short description of the perpetrator's observed behavior (e.g. fleeing, evasive).
+
+  - name: dim_sighting_location
+    description: |
+      Dimension of the locations where sightings occurred. Grain is one row per
+      unique city-country-region combination.
+    columns:
+      - name: location_id
+        description: Primary key. Deterministic surrogate key identifying a unique location.
+        data_tests:
+          - not_null
+          - unique
+      - name: city
+        description: City where the sighting occurred.
+      - name: country
+        description: ISO 3166 alpha-2 country code of the sighting location.
+      - name: region
+        description: Interpol agency region the sighting was reported to.
+
+  - name: dim_sighting_witness
+    description: |
+      Dimension of the witnesses who reported sightings. Grain is one row per
+      unique witness.
+    columns:
+      - name: witness_id
+        description: Primary key. Deterministic surrogate key identifying a unique witness.
+        data_tests:
+          - not_null
+          - unique
+      - name: witness_name
+        description: Full name of the witness who reported the sighting.
+
+  - name: fact_sighting
+    description: |
+      Fact table of individual Carmen Sandiego sightings, joining the witness,
+      agent, location, and behavior dimensions. Grain is one row per sighting.
+    columns:
+      - name: sighting_id
+        description: Primary key. Deterministic surrogate key identifying a unique sighting.
+        data_tests:
+          - not_null
+          - unique
+      - name: date_witness
+        description: Date the witness observed the sighting.
+      - name: date_agent
+        description: Date the field agent filed the report.
+      - name: region
+        description: Interpol agency region to which the sighting was reported.
+      - name: witness_id
+        description: Foreign key to dim_sighting_witness.witness_id.
+      - name: agent_id
+        description: Foreign key to dim_agent.agent_id.
+      - name: location_id
+        description: Foreign key to dim_sighting_location.location_id.
+      - name: behavior_id
+        description: Foreign key to dim_sighting_behavior.behavior_id.
+      - name: has_weapon
+        description: Whether the perpetrator was observed to be armed (boolean).
+      - name: has_hat
+        description: Whether the perpetrator was observed wearing a hat (boolean).
+      - name: has_jacket
+        description: Whether the perpetrator was observed wearing a jacket (boolean).
