@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: analytics_monthly_top_region_by_name
+    description: |
+      Most likely Interpol agency region for Carmen Sandiego, aggregated by calendar
+      month name across all years. Grain is one row per calendar month.
+    columns:
+      - name: month_name
+        description: Calendar month name (e.g. January, February).
+      - name: most_likely_region
+        description: Agency region with the greatest share of sightings that month.
+      - name: likelihood_pct
+        description: Share (percent) of that month's sightings attributed to the most likely region.
