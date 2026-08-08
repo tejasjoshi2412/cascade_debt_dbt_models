@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: analytics_monthly_top_behavior_by_name
+    description: |
+      Most commonly observed behavior of Carmen Sandiego, aggregated by calendar
+      month name across all years. Grain is one row per calendar month.
+    columns:
+      - name: month_name
+        description: Calendar month name (e.g. January, February).
+      - name: most_common_behavior
+        description: Behavior observed most frequently that month.
+      - name: occurrences
+        description: Number of sightings with that behavior that month.
+
+  - name: analytics_monthly_top_behavior_probability_by_name
+    description: |
+      Probability that Carmen Sandiego exhibits one of her three most occurring
+      behaviors (determined globally), aggregated by calendar month name across
+      all years. Grain is one row per calendar month.
+    columns:
+      - name: month_name
+        description: Calendar month name (e.g. January, February).
+      - name: probability_of_top_behaviors_pct
+        description: Probability (percent) that a sighting that month showed one of the global top-3 behaviors.
