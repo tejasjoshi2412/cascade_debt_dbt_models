@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: analytics_monthly_armed_jacket_no_hat_by_name
+    description: |
+      Probability that Carmen Sandiego is observed armed AND wearing a jacket but
+      NOT wearing a hat, aggregated by calendar month name across all years.
+      Grain is one row per calendar month.
+    columns:
+      - name: month_name
+        description: Calendar month name (e.g. January, February).
+      - name: probability_pct
+        description: Probability (percent) of being armed and wearing a jacket but not a hat that month.
